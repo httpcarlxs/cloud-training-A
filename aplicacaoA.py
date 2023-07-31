@@ -10,7 +10,7 @@ logging.basicConfig(filename='aplicacao_a.log', level=logging.INFO,
 def endpoint_handler():
     data = request.json
     logging.info(f"Requisição recebida: {data}")
-    return True
+    return "Requisição recebida com sucesso"
 
 if __name__ == '__main__':
     app.run(host='10.11.19.192', port=5000)
